@@ -13,6 +13,8 @@ object InTheBrowser:
   val skin: Skin =
     val calm = Skin.calm(accent = "#3b5bdb", deep = "#1e2a5a")
     calm.copy(css = calm.css + """
+      |body > footer .bar { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; }
+      |body > footer .more { margin-left: auto; }
       |body .okay-mark-sudoku { display: block; }
       |body .okay-mark-sudoku > .okay-group { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 0;
       |  box-sizing: border-box; width: min(100%, 450px); margin: 0 auto; border: 2px solid var(--okay-fg); padding: 0;
